@@ -1,0 +1,344 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: url(stadium.png)
+    no-repeat center fixed;
+    background-size: cover;
+}
+   
+header{
+    /* border: 2px solid black; */
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    /* background-color: rgba(0,0,0,.1); */
+    /* background-color: #da1212; */
+    background-color: rgba(0,0,0,.1);
+    z-index: 5;
+}
+
+nav{
+    flex: 100%;
+    display: flex;   
+}
+
+.one{
+    /* border:2px solid red; */
+    width: 15%;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    /* opacity: .7; */
+    /* width: auto; */
+    padding-top: 2px;
+}
+
+img{
+    width: 26%;
+    height: 85%;
+    object-fit: cover;
+    object-position: center;
+} 
+
+.two{
+    /* border:2px solid blue; */
+    flex: 60%;
+    display: flex;
+}
+
+.lang{
+    /* border: 2px solid darkblue; */
+    display: flex;
+    flex: 20%;
+    flex-flow: wrap;
+    justify-content: end;
+    padding: 30px;
+    margin: 0;
+    font-family: 'Bruno Ace SC', cursive;
+    transition: background-color .40s ease;
+}
+
+.material-symbols-outlined {
+    /* border: 2px solid black; */
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: white;
+    vertical-align: middle;
+}
+
+.lang .btn{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.lang .btn::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .4s ease-in-out;
+    background-color: rgba(255,255,255);
+}
+  
+.lang .btn:hover:before{
+    width: 100%;
+}
+
+.lang .btn1 a{
+    text-decoration: none;
+    color: rgba(255,255,255);
+}
+
+.lang .btn1{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-family: 'Bruno Ace SC', cursive;
+    color: rgba(255,255,255);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-right: -40px;
+    font-weight: bold;
+}
+
+.lang .btn1::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .4s ease-in-out;
+    background-color: rgba(255,255,255);
+}
+  
+.lang .btn1:hover:before{
+    width: 100%;
+}
+
+.account{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    font-weight: bold;
+    padding-top: 70px;
+}
+
+.account form{
+    /* background-color: rgb(245, 245, 245,.1); */
+    border-radius: 10px;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Bruno Ace SC', cursive;
+    /* opacity: .7; */
+    color: white;
+}
+
+.account form input{
+    position: relative;
+    /* background-color: whitesmoke; */
+    color: black;
+    font-size: 1.2em;
+    border-radius: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    height: 35px;
+    width: 350px;
+    border: 1px solid rgb(0, 0, 0,.2);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.account .btn a{
+    /* text-decoration: none; */
+    color: white;
+}
+
+.account .sign {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.account .sign a{
+    color: white;
+}
+
+.account form input:focus{
+    outline: none;
+}
+.account .btn{
+    /* background-color: transparent; */
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+    /* background-color: #3e6ae1; */
+    background-color: rgb(0, 0, 0,.7);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    width: 360px;
+    border: none;
+}
+
+.account .btn:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+footer{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* margin-top: 50px; */
+}
+
+.foot{
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.social-container {
+    width: 400px;
+    margin: 0px;
+    text-align: center;
+}
+  
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+}
+.social-icons li {
+    display: inline-block;
+    margin: 0.40em;
+    position: relative;
+    font-size: 1.2em;
+}
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    transition: all 265ms ease-out;
+}
+.social-icons a {
+    display: inline-block;
+}
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #00b5f5, #002a8f);
+    transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #00b5f5;
+    background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+form label,
+form input,
+form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */

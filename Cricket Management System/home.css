@@ -1,0 +1,1272 @@
+body{
+    margin: 0px;
+    padding: 0px;   
+    background: #0d1635;
+}
+
+header{
+    /* border: 2px solid black; */
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    /* background-color: rgba(0,0,0,.1); */
+    /* background-color: #da1212; */
+    background-color: rgba(0,0,0,.2);
+    z-index: 5;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+}
+
+.one{
+    /* border:2px solid red; */
+    width: 15%;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    /* opacity: .7; */
+    /* width: auto; */
+    padding-top: 2px;
+}
+
+.logo{
+    width: 26%;
+    height: 85%;
+    object-fit: cover;
+    object-position: center;
+} 
+
+.two{
+    /* border:2px solid blue; */
+    flex: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.two ul{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    /* opacity: .7; */
+}
+
+.two ul li{
+    /* border: 2px solid black; */
+    display: block;
+}
+
+.two ul li a{
+    /* border: 2px solid palevioletred; */
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 8px;
+    border-radius: 5px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color .40s ease;
+    position: relative;
+    font-weight: bold;
+    padding: 5px 5px;
+    font-size: 20px;
+}
+  
+/* .two ul li a:hover{
+    background-color: rgba(255,255,255,.3);
+    background-color: black;
+}  */
+  
+.two ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    transition: .4s ease-in-out;
+    background-color: rgba(255,255,255,.6);
+}
+  
+.two ul li a:hover:before{
+    width: 100%;
+}
+  
+.three{
+    /* border:2px solid rgb(21, 255, 0); */
+    flex: 15%;
+    display: flex;
+    justify-content: right;
+}
+  
+.three ul{
+    /* border: 2px solid yellow; */
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    /* opacity: .7; */
+}
+  
+.three ul li{
+    /* border: 2px solid black; */
+    display: block;
+}
+  
+.three ul li a{
+    /* border: 2px solid palevioletred; */
+    text-decoration: none;
+    display: block;
+    color: white;
+    /* margin-left: 10px; */
+    border-radius: 5px;
+    position: relative;
+    font-weight: bold;
+    padding: 5px 5px;
+    transition: background-color .40s ease;
+}
+  
+/* .three ul li a:hover{
+    background-color: rgba(255,255,255,.3);
+    background-color: black;
+} */
+  
+.three ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    transition: .4s ease-in-out;
+    /* transition: transform 150ms ease-in-out; */
+    background-color: rgba(255, 255, 255, 0.6);
+}
+  
+.three ul li a:hover:before{
+    width: 100%;
+}
+
+.three .search{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.three .line{
+    /* border: 2px solid palevioletred; */
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.material-symbols-outlined {
+    /* border: 2px solid red; */
+    color: white;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    /* filter: brightness(100%); */
+} 
+  
+.best{
+    height: 100vh;
+}
+
+.best h2{
+    /* border: 2px solid blue; */
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding-left: 20px;
+    padding-top: 30px;
+    color: white;
+}
+
+.column01 {
+    /* border: 2px solid blue; */
+    float: left;
+    width: 50%;
+    height: 50vh;
+    /* padding: 5px; */
+    border-radius: 10px;
+}
+
+.column01 img{
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+    margin-left: 3px;
+    /* padding-right: 5px; */
+    /* padding-bottom: 20px; */
+    border-radius: 10px;
+}
+
+.column02 {
+    /* border: 2px solid blue; */
+    float: left;
+    width: 50%;
+    /* padding: 5px; */
+}
+
+.column02 .column02_1{
+    /* border: 2px solid blue; */
+    float: left;
+    width: 49%;
+    /* padding: 5px; */
+}
+
+.column02 .column02_2{
+    /* border: 2px solid blue; */
+    float: left;
+    width: 49%;
+    margin-left: 8px;
+}
+
+.column02 .column02_3{
+    /* border: 2px solid blue; */
+    float: left;
+    width: 49%;
+    /* padding: 5px; */
+    margin-top: 5px;
+}
+
+.column02 .column02_4{
+    /* border: 2px solid blue; */
+    float: right;
+    width: 49%;
+    /* margin-right: 18px; */
+    margin-top: 5px;
+    margin-right: 4.5px;
+}
+
+.column02 .column02_1 img{
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    width: 100%;
+    height: 39vh;
+    z-index: 0;
+    /* padding-left: 10px; */
+    /* padding-right: 5px; */
+    /* padding-bottom: 20px; */
+    border-radius: 10px;
+    margin-left: 6px;
+}
+
+.column02 .column02_2 img{
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    width: 100%;
+    height: 39vh;
+    z-index: 0;
+    /* padding-left: 10px; */
+    /* padding-right: 5px; */
+    /* padding-bottom: 20px; */
+    border-radius: 10px;
+}
+
+.column02 .column02_3 img{
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    z-index: 0;
+    /* margin-top: 20px; */
+    /* padding-right: 5px; */
+    /* padding-bottom: 20px; */
+    border-radius: 10px;
+    margin-left: 6px;
+}
+
+.column02 .column02_4 img{
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    z-index: 0;
+    /* padding-left: 10px; */
+    /* padding-right: 5px; */
+    /* padding-bottom: 20px; */
+    border-radius: 10px;
+}
+
+.column a{
+    text-decoration: none;
+    height: 100vh;
+}
+
+.column a h4{
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-left: 25px;
+    color: black;
+    font-size: 20px;
+}
+
+.model{
+    /* border: 2px solid blue; */
+    position: relative;
+    /* z-index: -4; */
+    /* margin-bottom: -3.7px;   */
+}
+
+.model img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.model h4{
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translateX(-50%);
+    /* font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+.model h2{
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translateX(-50%);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    color: white;
+}
+
+.news h2{
+    position: absolute;
+    top: 173%;
+    left: 24%;
+    transform: translateX(-50%);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: white;
+    /* color: black; */
+}
+
+.news h4{
+    position: absolute;
+    top: 145%;
+    left: 62%;
+    transform: translateX(-50%);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    /* color: black; */
+}
+
+.news h6{
+    position: absolute;
+    top: 140%;
+    right: -10%;
+    transform: translateX(-50%);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    /* color: black; */
+}
+
+.news h3{
+    position: absolute;
+    top: 188.8%;
+    left: 62.5%;
+    transform: translateX(-50%);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    /* color: black; */
+}
+
+.news h5{
+    position: absolute;
+    top: 187%;
+    right: -10.8%;
+    transform: translateX(-50%);
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    /* color: black; */
+}
+
+.model1{
+    /* border: 2px solid blue; */
+    background-color: #320073;
+    position: relative;
+    border-radius: 10px;
+    margin: 3px;
+    margin-top: 25px;
+    height: 42vh;
+    /* z-index: -4; */
+    /* margin-bottom: -3.7px;   */
+}
+
+.model1 img{
+    height: 42vh;
+    width: 50%;
+    float: right;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.model1 .img1{
+    height: 18%;
+    width: 18%;
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    margin: 40px;
+}
+
+.model1 h1{
+    position: absolute;
+    top: 23%;
+    /* left:50%; */
+    /* transform: translateX(-50%); */
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #FF00A5;
+    margin: 40px;
+}
+
+.model1 h4{
+    position: absolute;
+    top: 42%;
+    /* left:50%; */
+    /* transform: translateX(-50%); */
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #FF00A5;
+    margin: 40px;
+}
+
+.model1 .btn1 a .demo1{
+    border: 1PX solid transparent;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: hsla(0,0%,100%,.1);
+    color: #FF00A5;
+    font-size: 16px;
+    padding: 12px 2px;
+    left: 8.5%;
+    width: 11%;
+    margin-top: 16.5%;
+    cursor: pointer;
+    transition: background-color .25s ease;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.model1 .btn1 a .demo1:hover{
+    background-color: hsla(0,0%,100%,.3);
+} 
+
+.model2{
+    /* border: 2px solid blue; */
+    background-color: #320073;
+    position: relative;
+    border-radius: 10px;
+    margin: 3px;
+    margin-top: 45px;
+    height: 65vh;
+    /* z-index: -4; */
+    /* margin-bottom: -3.7px;   */
+}
+
+.model2 img{
+    height: 65vh;
+    width: 50%;
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.model2 .img1{
+    height: 33.6%;
+    width: 8.9%;
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    margin: 40px;
+}
+
+.model2 h1{
+    position: absolute;
+    top: 45%;
+    left:52%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    /* margin: 0px; */
+}
+
+.model2 h4{
+    position: absolute;
+    top: 55%;
+    left:48.5%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 40px;
+}
+
+.model2 .btn1 a .demo1 {
+    border: 1PX solid transparent;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: hsla(0,0%,100%,.1);
+    color: white;
+    font-size: 16px;
+    padding: 12px 3px;
+    left: 9%;
+    width: 11%;
+    margin-top: 27.5%;
+    margin-left: 48%;
+    cursor: pointer;
+    transition: background-color .25s ease;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.model2 .btn1 a .demo1:hover{
+    background-color: hsla(0,0%,100%,.3);
+} 
+
+.model3{
+    /* border: 2px solid blue; */
+    background-color: #123270;
+    position: relative;
+    border-radius: 10px;
+    margin: 3px;
+    margin-top: 45px;
+    height: 50vh;
+    /* z-index: -4; */
+    /* margin-bottom: -3.7px;   */
+}
+
+.model3 img{
+    height: 50vh;
+    width: 50%;
+    float: right;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.model3 .img1{
+    height: 31%;
+    width: 8%;
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    margin: 25px;
+}
+
+.model3 h1{
+    position: absolute;
+    top: 32%;
+    /* left:50%; */
+    /* transform: translateX(-50%); */
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    margin: 30px;
+}
+
+.model3 .btn1 a .demo1{
+    border: 1PX solid transparent;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: hsla(0,0%,100%,.1);
+    color: white;
+    font-size: 16px;
+    padding: 12px 2px;
+    left: 7.7%;
+    width: 11%;
+    margin-top: 20.5%;
+    transition: background-color .25s ease;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.model3 .btn1 a .demo1:hover{
+    background-color: hsla(0,0%,100%,.3);
+} 
+
+.model4{
+    /* border: 2px solid blue; */
+    background-color: #0d1635;
+    position: relative;
+    border-radius: 10px;
+    margin: 3px;
+    margin-top: 45px;
+    height: 80vh;
+    /* z-index: -4; */
+    /* margin-bottom: -3.7px;   */
+}
+
+.model4 img{
+    height: 80vh;
+    width: 53%;
+    float: right;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.model4 .img1{
+    height: 15.6%;
+    width: 5.1%;
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    margin: 25px;
+}
+
+.model4 h1{
+    position: absolute;
+    top: 18%;
+    left:2%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: white;
+    /* margin: 0px; */
+}
+
+.model4 h6{
+    position: absolute;
+    top: 40%;
+    left:2%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    /* margin: 0px; */
+}
+
+.model4 .img2{
+    height: 2.5rem;
+    width: 2.5rem;
+    /* top: 500%; */
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 258px;
+    margin-left: -7%;
+}
+
+.model4 .img3{
+    height: 2.5rem;
+    width: 2.5rem;
+    /* top: 500%; */
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 310px;
+    margin-left: -7%;
+}
+
+.model4 .img4{
+    height: 2.5rem;
+    width: 2.5rem;
+    /* top: 500%; */
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 365px;
+    margin-left: -7%;
+}
+
+.model4 .img5{
+    height: 2.5rem;
+    width: 2.5rem;
+    /* top: 500%; */
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 420px;
+    margin-left: -7%;
+}
+
+.model4 a{
+    text-decoration: none;
+}
+
+.model4 .p1{
+    position: absolute;
+    top: 47.5%;
+    left: 3.5%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 40px;
+}
+
+.model4 .p2{
+    position: absolute;
+    top: 58.5%;
+    left: 3.5%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 40px;
+}
+
+.model4 .p3{
+    position: absolute;
+    top: 70%;
+    left: 3.5%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 40px;
+}
+
+.model4 .p4{
+    position: absolute;
+    top: 81%;
+    left: 3.5%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 40px;
+}
+
+.model4 .btn1 a .demo1 {
+    border: 1PX solid transparent;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: hsla(0,0%,100%,.1);
+    color: white;
+    font-size: 16px;
+    padding: 12px 3px;
+    left: 9%;
+    width: 11%;
+    margin-top: 27.5%;
+    margin-left: 48%;
+    cursor: pointer;
+    transition: background-color .25s ease;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.model4 .btn1 a .demo1:hover{
+    background-color: hsla(0,0%,100%,.3);
+} 
+
+.model5{
+    /* border: 2px solid blue; */
+    background-color: #00175f;
+    position: relative;
+    border-radius: 10px;
+    margin: 3px;
+    margin-top: 45px;
+    height: 51vh;
+    /* z-index: -4; */
+    /* margin-bottom: -3.7px;   */
+}
+
+.model5 img{
+    height: 51vh;
+    width: 50%;
+    float: right;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.model5 .img1{
+    height: 43px;
+    width: 126px;
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    margin: 40px;
+    /* margin-top: 25px; */
+    border-radius: 0px;
+}
+
+.model5 h1{
+    position: absolute;
+    top: 25%;
+    /* left:50%; */
+    /* transform: translateX(-50%); */
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    margin: 30px;
+}
+
+.model5 h4{
+    position: absolute;
+    top: 40%;
+    left: -1%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 40px;
+}
+
+.model5 .btn1 a .demo1{
+    border: 1PX solid transparent;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: hsla(0,0%,100%,.1);
+    color: white;
+    font-size: 16px;
+    padding: 15px 2px;
+    left: 10%;
+    width: 16%;
+    margin-top: 20.5%;
+    transition: background-color .25s ease;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.model5 .btn1 a .demo1:hover{
+    background-color: hsla(0,0%,100%,.3);
+}
+
+.model6 img{
+    /* border: 2px solid red; */
+    height: 10%;
+    width: 12%;
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 3px;
+    margin-left: 50px;
+    border-radius: 0px;
+}
+
+.model6 {
+    /* border: 2px solid green; */
+    margin-top: 20px;
+}
+
+.model6 .btn1 a .demo1{
+    border: 1PX solid transparent;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: hsla(0,0%,100%,.1);
+    color: white;
+    font-size: 16px;
+    padding: 15px 2px;
+    right: -3%;
+    float: right;
+    width: 16%;
+    margin-top: 4.5%;
+    transition: background-color .25s ease;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.model6 .btn1 a .demo1:hover{
+    background-color: hsla(0,0%,100%,.3);
+}
+
+.model6 .column1{
+    float: left;
+    width: 18%;
+    margin-right: 10px;
+}
+
+.model6 .column1 img{
+    object-fit: cover;
+    object-position: center;
+    height: 65vh;
+    width: 38vh;
+    margin-left: 38px;
+    border-radius: 10px;
+    /* margin: 40px; */
+}
+
+.model6 .column1 .flag1 h3{
+    position: absolute;
+    margin-top: 23%;
+    left: 7%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.model6 .column1 .flag1 h4{
+    position: absolute;
+    margin-top: 25.8%;
+    left: 5%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.model6 .column1 .flag1 h6{
+    position: absolute;
+    margin-top: 29.2%;
+    left: 8.6%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.model6 .column1 .flag1 .img1{
+    position: absolute;
+    margin-top: 21%;
+    left: 7.4%;
+    height: 4.5%;
+    width: 3%;
+    border-radius: 5px;
+}
+
+.model6 .column1 .flag2 h3{
+    position: absolute;
+    margin-top: 23%;
+    left: 27%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.model6 .column1 .flag2 h4{
+    position: absolute;
+    margin-top: 25.8%;
+    left: 26.4%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.model6 .column1 .flag2 h6{
+    position: absolute;
+    margin-top: 29.2%;
+    left: 28%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.model6 .column1 .flag2 .img2{
+    position: absolute;
+    margin-top: 21%;
+    left: 26.5%;
+    height: 4.5%;
+    width: 3%;
+    border-radius: 5px;
+}
+
+.model6 .column1 .flag3 h3{
+    position: absolute;
+    margin-top: 23%;
+    left: 46.5%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.model6 .column1 .flag3 h4{
+    position: absolute;
+    margin-top: 25.8%;
+    left: 44.6%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.model6 .column1 .flag3 h6{
+    position: absolute;
+    margin-top: 29.2%;
+    left: 46.9%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    /* color: black; */
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.model6 .column1 .flag3 .img3{
+    position: absolute;
+    margin-top: 21%;
+    left: 45.5%;
+    height: 4.5%;
+    width: 3%;
+    border-radius: 5px;
+}
+
+.model6 .column1 .flag4 h3{
+    position: absolute;
+    margin-top: 23%;
+    right: 26%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.model6 .column1 .flag4 h4{
+    position: absolute;
+    margin-top: 25.8%;
+    right: 27.7%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.model6 .column1 .flag4 h6{
+    position: absolute;
+    margin-top: 29.2%;
+    right: 28.7%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.model6 .column1 .flag4 .img4{
+    position: absolute;
+    margin-top: 21%;
+    right: 30.5%;
+    height: 4.5%;
+    width: 3%;
+    border-radius: 5px;
+}
+
+.model6 .column1 .flag5 h3{
+    position: absolute;
+    margin-top: 23%;
+    right: 9%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.model6 .column1 .flag5 h4{
+    position: absolute;
+    margin-top: 25.8%;
+    right: 10%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.model6 .column1 .flag5 h6{
+    position: absolute;
+    margin-top: 29.2%;
+    right: 9.5%;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.model6 .column1 .flag5 .img5{
+    position: absolute;
+    margin-top: 21%;
+    right: 11%;
+    height: 4.5%;
+    width: 3%;
+    border-radius: 5px;
+}
+
+footer{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    /* margin-bottom: 10px; */
+}
+  
+.foot{
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.foot ul{
+    display: flex;
+    flex-flow: wrap row;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+  
+.foot ul li{
+    /* border: 2px solid black; */
+    display: block;
+}
+  
+.foot ul li a{
+    /* border: 2px solid red; */
+    display: block;
+    flex-wrap: wrap;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    /* transition: background-color .40s ease; */
+    opacity: .7;
+    position: relative;
+    padding: 5px 5px;
+}
+  
+.foot ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;  
+    transition: .4s ease-in-out;
+    /* background-color: rgba(0,0,0,.9); */
+    background-color: rgba(255, 255, 255, 0.7)
+}
+  
+.foot ul li a:hover:before{
+    width: 100%;
+}
+  
